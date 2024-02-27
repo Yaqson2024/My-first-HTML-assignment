@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007BFF;
+        }
+    </style>
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is the home section. Feel free to explore!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a brief description about yourself here.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li><a href="#">Project 1</a> - Description of Project 1</li>
+            <li><a href="#">Project 2</a> - Description of Project 2</li>
+            <li><a href="#">Project 3</a> - Description of Project 3</li>
+        </ul>
+    </section>
+
+    <script>
+        // Add smooth scrolling to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
